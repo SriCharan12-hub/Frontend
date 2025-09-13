@@ -1,0 +1,137 @@
+
+          html, body, #root {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+          }
+
+          .landing-con {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100vw;
+            background: linear-gradient(135deg, #FFC371, #FF5F6D);
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            color: #333;
+            text-align: center;
+          }
+
+          .content-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 450px;
+            animation: fadeIn 0.8s ease-in-out;
+          }
+          
+          @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+
+          .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #3f2b96;
+            margin-bottom: 10px;
+          }
+
+          .subtitle {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+          }
+          
+          .google-btn-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+
+          .google-btn {
+            background-color: #4285F4;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+          .google-btn:hover {
+            background-color: #357ae8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          }
+          .google-btn svg {
+            fill: #fff;
+            width: 20px;
+            height: 20px;
+          }
+          
+          .button-group {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            gap: 10px;
+          }
+
+          .button {
+            padding: 14px 20px;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            flex: 1;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+          }
+          
+          .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          }
+          
+          .register-btn {
+            background: linear-gradient(45deg, #FF5F6D, #FFC371);
+            padding: 0px;
+            margin: 0px;
+            height: 50px;
+            margin-top: 20px;
+          }
+          .register-btn:hover {
+            background: linear-gradient(45deg, #d44d5c, #e5a759);
+          }
+
+          .login-btn {
+            background: linear-gradient(45deg, #3f2b96, #a8c0ff);
+            height: 50px;
+          }
+          .login-btn:hover {
+            background: linear-gradient(45deg, #2c1e6c, #7b94d4);
+          }
+          
+          .message {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+            font-style: italic;
+          }
+       

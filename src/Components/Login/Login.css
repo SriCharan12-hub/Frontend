@@ -1,0 +1,230 @@
+/* ====== RESET & BASE STYLES ====== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background-color: #f0f5fa;
+  background-size: cover;
+}
+
+/* ====== LOGIN PAGE STYLES ====== */
+.Login-Container {
+  background-image: url('https://res.cloudinary.com/dedmnd9gb/image/upload/v1751948376/Background_cn9dsa.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 0px 20px 20px 20px;
+
+}
+.registerpara1{
+  margin-top: 10px;
+}
+
+/* Logo/Image (top of form) */
+.login-image {
+  height: 100px;
+  margin-bottom: 20px;
+}
+.back-btn{
+  margin-top: 10px;
+}
+.Login-Con {
+  background-color: #fff;
+  border-radius: 30px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.Form-Container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Input Fields */
+.type-text,
+.type-password {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.type-text:focus,
+.type-password:focus {
+  border-color: #888;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.checkbox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  font-size: 14px;
+  color: #333;
+}
+
+.show-pass {
+  font-size: 14px;
+  margin-top: 8px;
+  display: inline-block;
+  color: #555;
+}
+
+/* Buttons */
+.login-btn,
+.login-Btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-btn {
+  background-color: white;
+
+}
+.login-Btn {
+  background-color: green;
+  color: white;
+}
+.login-btn:hover {
+  background-color: #9a9a9a;
+}
+.login-Btn:hover {
+  background-color: #007a00;
+}
+
+/* ====== "Page Not Found" Section ====== */
+.PageNotFound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 100px;
+}
+.Page-para {
+  color: #191919cc;
+  font-size: 18px;
+}
+
+/* ====== Shared Styling: Home Main Grid (If Needed in Other Pages) ====== */
+.Home-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* ====== RESPONSIVENESS ====== */
+@media (max-width: 768px) {
+  .Login-Container {
+    padding: 40px 15px 20px;
+  }
+
+  .Login-Con {
+    max-width: 90%;
+    padding: 30px 20px;
+  }
+
+  .login-image {
+    height: 80px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .login-btn,
+  .login-Btn {
+    font-size: 16px;
+  }
+
+  .show-pass {
+    font-size: 13px;
+  }
+
+  .PageNotFound-container {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Login-Con {
+    padding: 24px 16px;
+  }
+
+  .login-image {
+    height: 60px;
+  }
+
+  .type-text,
+  .type-password {
+    font-size: 14px;
+  }
+
+  .login-btn,
+  .login-Btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .Page-para {
+    font-size: 16px;
+  }
+}
+.login-error{
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+.registerbtn{
+  color: blue;
+  cursor: pointer;
+}
+.text-para{
+  text-align: center;
+}

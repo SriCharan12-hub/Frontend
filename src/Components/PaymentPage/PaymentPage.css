@@ -1,0 +1,77 @@
+/* --------------------- PAYMENT/CONFIRMATION SCREENS ------------------ */
+.payment-image2 {
+  /* position: relative; */
+  bottom: 20px;
+  height: 48px;
+}
+
+.payment-image1 {
+  height: 90px;
+  margin-top: 80px;
+  /* position: ; */
+  top: 38px;
+
+}
+
+.tick, .lag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.payment-head {
+  font-size: 1.7rem;
+  color: #185a9d;
+  margin-bottom: 12px;
+}
+
+.payment-para1, .payment-para2 {
+  font-size: 1.06rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.payment-btn {
+  margin-top: 20px;
+  padding: 10px 32px;
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  color: #fff;
+  font-size: 1.09rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.payment-btn:hover {
+  background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+}
+/* Desktop */
+@media (min-width: 769px) {
+  .cart-badge {
+    top: 25px;
+    right: 90px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .cart-badge {
+    top: 30px;
+    right: 90px;
+  }
+}
+
+/* Small Mobiles */
+@media (max-width: 480px) {
+  .cart-badge {
+    top: 28px;
+    right: 90px;
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+  }
+}

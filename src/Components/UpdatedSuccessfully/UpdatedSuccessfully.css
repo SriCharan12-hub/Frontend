@@ -1,0 +1,76 @@
+/* SuccessPage.css */
+
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+}
+
+.success-content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+.success-heading {
+  color: #28a745;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: #666;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* New Static Checkmark and Circle Styling */
+.checkmark-static-container {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 20px auto 0;
+  overflow: visible; /* Prevents tick from being cut off if it goes outside the circle */
+}
+
+.checkmark-static-circle {
+  stroke-width: 3; /* Thickness of the circle line */
+  stroke: #28a745; /* A vibrant green for the circle */
+  fill: none;
+}
+
+.checkmark-static-tick {
+  stroke-width: 8; /* Thickness of the tick mark line */
+  stroke: #1e7e34; /* A darker green to make the tick stand out */
+  fill: none;
+  stroke-linecap: round;
+}
+.back-button {
+  background-color: skyblue;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 50px;
+}
+
+.back-button:hover {
+  background-color: red0;
+  color: #000;
+}
+
+.back-button:active {
+  background-color: #ccc;
+  transform: translateY(1px);
+}

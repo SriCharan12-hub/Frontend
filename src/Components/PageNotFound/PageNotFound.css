@@ -1,0 +1,13 @@
+.PageNotFound-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  position: relative;
+  top: 150px;
+}
+.Page-para{
+  color: #191919CC;
+
+}

@@ -1,0 +1,111 @@
+/* Cart icon wrapper for relative positioning */
+.cart-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+/* Cart badge styling */
+.cart-badge {
+	position: absolute;
+	top: -50px;
+	left: 30px;
+	background: #f60f22;
+	color: #fff;
+	border-radius: 50%;
+	min-width: 22px;
+	height: 22px;
+	font-size: 14px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+	z-index: 3;
+	border: 2px solid #fff;
+}
+
+@media (max-width: 768px) {
+	.cart-badge {
+		min-width: 18px;
+		height: 18px;
+		font-size: 11px;
+		top: -6px;
+		right: -6px;
+	}
+}
+.Home-Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  padding: 16px 32px;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  flex-wrap: wrap;
+  transition: 0.2s padding;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+/* --------------------- NAVIGATION BAR -------------------------- */
+.Home-Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  padding: 16px 32px;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  flex-wrap: wrap;
+  transition: 0.2s padding;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 6;
+}
+.Home-container{
+  position: relative;
+}
+
+.Home-image {
+  height: 58px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  cursor: pointer;
+  transition: 0.2s transform;
+}
+.Home-image:hover {
+  transform: scale(1.08);
+}
+
+.Home-Nav1 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.Home-1, .Home-3 {
+  color: #fff;
+  font-size: 31px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+
+}
+.Home-1:hover, .Home-3:hover {
+  color: #ffe082;
+}
+
+.Home-2 {
+  font-size: 25px;
+  color: #fff;
+  margin: 0 12px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.Home-2:hover { color: #ffe082; }
